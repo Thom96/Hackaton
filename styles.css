@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.title {
+    font-family: 'Arapey';
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title h1 {
+    font-size: 43px;
+}
+
+.title h2 {
+    margin-top: -8px;
+    font-size: 17px;
+}
+
+.nav-bar {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'almarai';
+    text-transform: uppercase;
+}
+
+.headerimage {
+    width: 100%;
+}
+
+/* START STYLING TOUREN */
+
+.touren h2 {
+    font-family: 'Almarai';
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.column {
+    margin-bottom: 45px;
+}
+
+.tour-image {
+    width: 100%;
+    height: 200px;
+    margin: 15px 0;
+}
+
+.column h3 {
+    text-transform: uppercase;
+    display: block;
+    color: black;
+    font-family: 'almarai';
+    font-size: 12px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0 90px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* START STYLING EXAMEN */
+
+.examens {
+    margin-bottom: 45px;
+    padding: 0 50px;
+    text-align: center;
+ }
+
+ .motorrijbewijs h2 {
+    font-family: 'Almarai';
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 15px;
+ }
+
+ .motorrijbewijs h3, p {
+     text-align: center;
+     font-family:sans-serif;
+     margin: 10px;
+ }
+
+ .examen-image {
+     width: 250px;
+     height: 250px;
+     border-radius: 100%;
+     border: 5px solid lightskyblue;
+     margin-bottom: 25px;
+ }
+
+/* START STYLING CONTACT */
+
+.contactpage {
+    font-family:'almarai';
+    float: left;
+    cursor: auto;
+}
+
+.contactpage h1 {
+    margin: 30px 0;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.contactpage p {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.contactpage input {
+    width: 50%;
+    margin: 5px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid grey;;
+    outline: none;
+}
+
+.contactpage button {
+    border: 2px solid black;
+    color: black;
+    background: lightgrey;
+    margin-top: 30px;
+    padding: 14px 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: lightgrey;
+    font-family: 'almarai';
+    font-size: 12px;
+    padding: 35px 0;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (min-width: 1024px){
+    main {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .touren-midden {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+    }
+
+    header {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+
+    .headerimage {
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        height: 450px;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+    .motorrijbewijs-midden {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        text-align: center;
+    }
+
+    .motorrijbewijs {
+        margin-top: 40px;
+    }
+
+    .nav-bar, .title {
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+
+}

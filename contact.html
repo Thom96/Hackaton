@@ -1,0 +1,87 @@
+<!DOCTYPE <html>
+    <html>
+
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" type="text/css" href="styles.css">
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Montserrat:wght@200&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+          </style>
+          <title>MotoThom</title>
+        </head>
+      
+        <body>
+          <header>
+            <div class="title">
+              <h1>MotoThom</h1>
+              <h2>Alles voor de motor</h2>
+            </div>
+            
+            <!-- NAVIGATIE -->
+        <div class="nav-bar">
+            <nav>
+            <ul class="main-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>  
+                <li class="nav-item">
+                <a class="nav-link" href="touren.html">Touren</a>  
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link" href="rijbewijs.html">Rijbewijs</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+      
+          <main>
+            <!-- START MAINIMAGE-->
+            <div>
+                <img class="headerimage" src="./images/motor-header3.png" alt="header image">
+            </div>
+            
+            <!--Start contact formulier-->
+            <div class="contactpage">
+                <h1>Contact</h1>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                        <input placeholder="Naam" type="text" name="contact" required><br>
+                        <input placeholder="Email" type="email" name="contact" required><br>
+                        <br>
+                        <input placeholder="Kenteken voertuig" type="text" name="contact">
+                        <br><br><br>
+                        <label>Bouwjaar: <br><input type="date" name="contact"></label>
+                        <br><br>
+                        <label>Merk motor:</label><br>
+                            <select id="kiesmotor">
+                                <option value="geenmotor">Ik heb geen motor</option>
+                                <option value="Ducati">Ducati</option>
+                                <option value="Harley Davidson">Harley Davidson</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Kawasaki">Kawasaki</option>
+                                <option value="Suzuki">Suzuki</option>
+                                <option value="Triumph">Triumph</option>
+                                <option value="KTM">KTM</option>
+                            </select>
+                        <br><br>
+                        <label>Foto van de motor: <br><input type="file" name="contact"></label><br>
+                        <br>
+                        
+                        <button type="submit" name="contact">Verstuur</button></br>
+                    </p>
+                </form>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        Copyright 2021 - MotoThom
+    </footer>
+
+</html>
